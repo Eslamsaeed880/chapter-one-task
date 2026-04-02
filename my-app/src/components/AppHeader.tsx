@@ -1,6 +1,6 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
 export const AppHeader: React.FC = () => {
   return (
@@ -16,18 +16,18 @@ const styles = StyleSheet.create({
     paddingTop: 60,
     paddingHorizontal: 20,
     paddingBottom: 20,
-    display: 'flex',
-    flexDirection: 'row',
+    display: "flex",
+    flexDirection: "row",
     gap: 10,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    backgroundColor: '#ffffff',
+    alignItems: "center",
+    justifyContent: "flex-start",
+    backgroundColor: "#ffffff",
     borderBottomWidth: 1,
-    borderBottomColor: '#f0f0f0',
+    borderBottomColor: "#f0f0f0",
   },
   title: {
     fontSize: 28,
-    fontWeight: 'bold',
-    color: '#333333',
+    fontWeight: "bold",
+    color: "#333333",
   },
 });
