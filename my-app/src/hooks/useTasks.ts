@@ -31,10 +31,15 @@ export const useTasks = () => {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
   };
 
+  const clearTasks = () => {
+    setTasks([]);
+  };
+
   return {
     tasks,
     addTask,
     toggleTaskCompletion,
     deleteTask,
+    clearTasks,
   };
 };

@@ -3,10 +3,12 @@ import { StyleSheet, KeyboardAvoidingView, Platform } from "react-native";
 import { TaskInput } from "./src/components/TaskInput";
 import { AppHeader } from "./src/components/AppHeader";
 import { TaskList } from "./src/components/TaskList";
+import { DeleteAllButton } from "./src/components/DeleteAllButton";
 import { useTasks } from "./src/hooks/useTasks";
 
 export default function App() {
-  const { tasks, addTask, toggleTaskCompletion, deleteTask } = useTasks();
+  const { tasks, addTask, toggleTaskCompletion, deleteTask, clearTasks } =
+    useTasks();
 
   return (
     <KeyboardAvoidingView
@@ -16,6 +18,8 @@ export default function App() {
       <StatusBar style="dark" />
 
       <AppHeader />
+
+      <DeleteAllButton visible={tasks.length > 0} onPress={clearTasks} />
 
       <TaskList
         tasks={tasks}
