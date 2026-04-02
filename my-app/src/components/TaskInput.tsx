@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 50,
     backgroundColor: "#f8f9fa",
-    borderRadius: 25,
+    borderRadius: 12,
     paddingHorizontal: 20,
     fontSize: 16,
     color: "#333",
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   addButton: {
     width: 50,
     height: 50,
-    borderRadius: 25,
+    borderRadius: 12,
     backgroundColor: "#4A90E2",
     justifyContent: "center",
     alignItems: "center",
